@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>docs.gastbob40</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="docs.gastbob40 Website">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+    <!-- Lato font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap">
+    <!-- Favicon -->
+    <link rel="icon" href="_media/favicon.ico">
+    <!-- Overriding theme stuff -->
+    <style>
+        :root {
+            --theme-color: rgb(45, 166, 45);
+            --cover-background-image: initial; /* Necessary to override theme */
+            --cover-background-color: rgba(0, 0, 0, 0); /* Necessary to override theme */
+            --sidebar-name-font-family: Lato, sans-serif;
+            --sidebar-name-font-weight: 700;
+        }
+
+        .cover-main h1 {
+            font-family: Lato, sans-serif;
+            font-weight: 700;
+        }
+
+        .cover-main img {
+            width: 165px;
+            height: 165px;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+<div id="app"></div>
+<!-- Docsify config -->
+<script>
+    window.$docsify = {
+        name: 'docs.gastbob40',
+        repo: 'https://github.com/gastbob40/docs.gastbob40',
+        loadSidebar: true,
+        subMaxLevel: 3,
+        coverpage: true,
+        homepage: 'home.md',
+        auto2top: true,
+        relativePath: true,
+        alias: {
+            '/epistyle/': '/epistyle/index.md',
+            '/vim/': '/vi' +
+                '/index.md'
+        }
+    }
+</script>
+<!-- Docsify -->
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<!-- Prism for YAML, JSON and Kotlin syntax highlighting -->
+</body>
+</html>
